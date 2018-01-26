@@ -1,0 +1,17 @@
+@import '../component/app/_app.scss';
+
+html {
+  position: relative;
+  head, link, script {
+    display: none;
+  }
+
+  body {
+    position: relative;
+    background-color: $color-primary;
+  }
+
+  span, em, strong, i {
+    display: inline;
+  }
+}
