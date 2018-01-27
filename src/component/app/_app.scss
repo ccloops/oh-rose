@@ -3,10 +3,9 @@ h1{
   font-size: 2em;
 }
 
-nav {
+nav, main {
   margin: 0 auto;
   width: 960px;
-  height: 300px;
   border-radius: 10px;
   text-align: center;
   
@@ -21,5 +20,15 @@ nav {
     &:hover {
       color: cornsilk;
     }
+  }
+}
+
+main {
+  margin: 0 auto;
+
+  img {
+    border-radius: 10px;
+    margin: 10px auto;
+    max-width: 100%;
   }
 }

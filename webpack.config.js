@@ -21,6 +21,18 @@ webPackConfig.plugins = [
 
 webPackConfig.module = {
   rules: [
+    // {test: /\.(jpe?g|png|gif|svg)$/i, loader: 'file-loader?name=/public/icons/[name].[ext]'},
+    {
+      test: /\.(jpg|gif|png|svg)$/,
+      exclude: /\.icon\.svg$/,
+      use: [{
+        loader: 'url-loader',
+        options: {
+          limit: 10000,
+          name: 'image/[name].[hash].[ext]',
+        },
+      }],
+    },
     {
       test: /\.js$/,
       exclude: /node_modules/,
