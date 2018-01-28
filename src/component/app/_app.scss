@@ -1,6 +1,7 @@
 h1{
   text-align: center;
   font-size: 2em;
+  font-style: italic;
 }
 
 nav, main {
@@ -18,7 +19,8 @@ nav, main {
     color: black;
 
     &:hover {
-      color: cornsilk;
+      color: darkSlateGray;
+      background-color: rgb(226, 220, 196);
     }
   }
 }
@@ -30,5 +32,6 @@ main {
     border-radius: 10px;
     margin: 10px auto;
     max-width: 100%;
+
   }
 }
