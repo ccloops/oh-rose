@@ -8,6 +8,9 @@ Oh, Rose!
 
 https://oh-rose.herokuapp.com/
 
+
+![Oh Rose Overview](./src/assets/app-overview.png)
+
 ## Genre
 ghost meatwave
 
