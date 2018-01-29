@@ -1,4 +1,5 @@
 import './_app.scss';
+import {FaFacebookSquare, FaInstagram, FaTwitter, FaMusic} from 'react-icons/lib/fa';
 import React from 'react';
 import {BrowserRouter, Route, Link} from 'react-router-dom';
 
@@ -25,11 +26,11 @@ class App extends React.Component {
               </nav>
             </header>
             <main>
-              <ul>
-                <li><a href="https://www.instagram.com/ohroseh/" target="blank">Instagram</a></li>
-                <li><a href="https://www.facebook.com/ohrosemusic/" target="blank">Facebook</a></li>
-                <li><a href="https://twitter.com/ohrosemusic?lang=en" target="blank">Twitter</a></li>
-                <li><a href="https://ohrose.bandcamp.com/" target="blank">Bandcamp</a></li>
+              <ul className='icons'>
+                <li><a href='https://www.instagram.com/ohroseh/' target='blank'><FaInstagram/></a></li>
+                <li><a href='https://www.facebook.com/ohrosemusic/' target='blank'><FaFacebookSquare/></a></li>
+                <li><a href='https://twitter.com/ohrosemusic?lang=en' target='blank'><FaTwitter/></a></li>
+                <li><a href='https://ohrose.bandcamp.com/' target='blank'><FaMusic/></a></li>
               </ul>
             </main>
             <Route exact path='/' component={Landing}/>

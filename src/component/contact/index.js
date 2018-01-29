@@ -6,7 +6,6 @@ class Contact extends React.Component {
       <div className='contact'>
         <form type='submit'>
 
-          <label>First Name</label>
           <input 
             type='text'
             id='fname'
@@ -14,7 +13,6 @@ class Contact extends React.Component {
             placeholder='Your first name...'
           />
 
-          <label>Last Name</label>
           <input
             type='text'
             id='lname'
@@ -22,7 +20,6 @@ class Contact extends React.Component {
             placeholder='Your last name...'
           />
 
-          <label>Subject</label>
           <textarea 
             id='subject' 
             name='subject'
