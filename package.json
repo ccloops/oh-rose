@@ -7,7 +7,9 @@
     "test": "jest -i --coverage",
     "watch": "webpack-dev-server --inline --hot",
     "build": "webpack",
-    "start": "node main.js"
+    // "start": "node main.js"
+    "build:prod": "NODE_ENV=production webpack -p -progress --colors --bail --optimize-dedupe --optimize-minimize",
+    "postinstall": "npm run build:prod"  
   },
   "repository": {
     "type": "git",
