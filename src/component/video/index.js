@@ -1,10 +1,9 @@
-import './_music.scss';
+import './_video.scss';
 import React from 'react';
-class Music extends React.Component {
+class Video extends React.Component {
   render() {
     return(
-      <div className='music'>
-        <h2>Music Videos</h2>
+      <div className='video'>
         <main>
           <iframe width="560" height="315" src="https://www.youtube.com/embed/ZSOvhRtS1nA" frameBorder="0" allowFullScreen></iframe>
           <iframe width="560" height="315" src="https://www.youtube.com/embed/SiK1Qet6_1g" frameBorder="0" allowFullScreen></iframe>
@@ -15,4 +14,4 @@ class Music extends React.Component {
   }
 }
 
-export default Music;
+export default Video;

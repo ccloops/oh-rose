@@ -9,7 +9,12 @@ html {
 
   body {
     position: relative;
-    background-color: $color-primary;
+    // background-color: $color-primary;
+    // background-color: white;
+    background-image: url('../assets/rose.jpg');
+    // background-repeat: no-repeat;
+    // background-position: center;
+    background-size: 50%;
   }
 
   span, em, strong, i {
