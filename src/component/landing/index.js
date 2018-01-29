@@ -7,6 +7,7 @@ class Landing extends React.Component {
     return (
       <div className='landing'>
         <img src={tattoos} />
+        <a target='blank' href='http://www.jamie-nadel.com/'><p>photo by: jamie nadel</p></a>
       </div>
     );
   }

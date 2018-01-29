@@ -32,6 +32,12 @@ footer {
     border-radius: 10px;
     margin: 10px auto;
     max-width: 100%;
+    position: relative;
+  }
+
+  p {
+    position: absolute;
+    bottom: 0;
   }
 }
 
@@ -42,7 +48,7 @@ footer {
 
     a {
     color: maroon;
-    // color: #fff;
+    padding: 40px;
     text-shadow: 1px 1px 1px #ccc;
     font-size: 1.5em;
     }
