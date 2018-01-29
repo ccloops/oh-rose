@@ -1,5 +1,4 @@
 import './_app.scss';
-import tattoos from '../../assets/tattoos.jpg';
 import React from 'react';
 import {BrowserRouter, Route, Link} from 'react-router-dom';
 
@@ -26,7 +25,6 @@ class App extends React.Component {
               </nav>
             </header>
             <main>
-              <img src={tattoos} />
               <ul>
                 <li><a href="https://www.instagram.com/ohroseh/" target="blank">Instagram</a></li>
                 <li><a href="https://www.facebook.com/ohrosemusic/" target="blank">Facebook</a></li>
