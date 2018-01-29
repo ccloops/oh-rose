@@ -6,7 +6,7 @@ Oh, Rose!
 
 ### Deployed Site:
 
-https://ccloops.github.io/oh-rose/
+https://oh-rose.herokuapp.com/
 
 ## Genre
 ghost meatwave
