@@ -1,0 +1,37 @@
+h1 {
+  text-align: center;
+  font-size: 2em;
+  font-style: italic;
+}
+
+nav, main {
+  margin: 0 auto;
+  width: 960px;
+  border-radius: 10px;
+  text-align: center;
+  
+  li {
+    display: inline-block;
+    width: 100px;
+  }
+  
+  a {
+    color: black;
+
+    &:hover {
+      color: darkSlateGray;
+      background-color: rgb(226, 220, 196);
+    }
+  }
+}
+
+main {
+  margin: 0 auto;
+
+  img {
+    border-radius: 10px;
+    margin: 10px auto;
+    max-width: 100%;
+
+  }
+}
