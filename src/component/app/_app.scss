@@ -1,10 +1,13 @@
 h1 {
   text-align: center;
-  font-size: 2em;
+  font-size: 5em;
   font-style: italic;
+  margin-top: 2em;
+  margin-bottom: 3em;
+
 }
 
-nav, main {
+nav, footer {
   margin: 0 auto;
   width: 960px;
   border-radius: 10px;
@@ -19,19 +22,42 @@ nav, main {
     color: black;
 
     &:hover {
-      color: darkSlateGray;
-      background-color: rgb(226, 220, 196);
+      color: maroon;
+      // background-color: rgb(226, 220, 196);
     }
   }
 }
 
-main {
+footer {
   margin: 0 auto;
 
   img {
     border-radius: 10px;
     margin: 10px auto;
     max-width: 100%;
+    position: relative;
+  }
 
+  p {
+    position: absolute;
+    bottom: 0;
+  }
+}
+
+footer {
+
+  text-align: center;
+
+  .icons {
+    // position: fixed;
+    // bottom: 0;
+
+    a {
+    // color: maroon;
+    padding: 40px;
+    margin: 10px;
+    text-shadow: 1px 1px 1px #ccc;
+    font-size: 1.5em;
+    }
   }
 }

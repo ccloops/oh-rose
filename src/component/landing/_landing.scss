@@ -1,13 +1,36 @@
 @import 'vars';
 
-.landing {
+div {
   margin: 0 auto;
+  width: 960px;
 
   img {
     border-radius: 10px;
     margin: 10px auto;
     max-width: 100%;
-    width: 70%;
-  
+    width: 100%;
+    position: relative;
+  }
+
+  p {
+    position: absolute;
+    width: 960px;
+    background: #fff;
+    padding: 5px;
+    box-sizing: border-box;
+    bottom: 0;
+    text-align: center;
+    opacity: .6;
+  }
+
+  a, p {
+    color: black;
+
+    &:hover {
+      color: maroon;
+      // background-color: cornsilk;
+    }
   }
 }
+
+
