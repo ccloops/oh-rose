@@ -1,9 +1,10 @@
 import './_app.scss';
-import {FaFacebookSquare, FaInstagram, FaTwitter, FaMusic} from 'react-icons/lib/fa';
+import {FaFacebookSquare, FaInstagram, FaTwitter, FaMusic, FaSpotify} from 'react-icons/lib/fa';
 import React from 'react';
 import {BrowserRouter, Route, Link} from 'react-router-dom';
 
 import Landing from '../landing';
+import Photo from '../photo';
 import Video from '../video';
 import Schedule from '../schedule';
 import Contact from '../contact';
@@ -19,6 +20,7 @@ class App extends React.Component {
                 <ul>
                   <li><Link to='/'>Home</Link></li>
                   <li><Link to='/video'>Videos</Link></li>
+                  <li><Link to='/photo'>Photos</Link></li>
                   <li><Link to='/schedule'>Schedule</Link></li>
                   <li><Link to='/contact'>Contact</Link></li>
                 </ul>
@@ -31,10 +33,12 @@ class App extends React.Component {
                 <li><a href='https://www.facebook.com/ohrosemusic/' target='blank'><FaFacebookSquare/></a></li>
                 <li><a href='https://twitter.com/ohrosemusic?lang=en' target='blank'><FaTwitter/></a></li>
                 <li><a href='https://ohrose.bandcamp.com/' target='blank'><FaMusic/></a></li>
+                <li><a href='https://open.spotify.com/artist/3k7ErvhO8cmFVOTrAVtuKe' target='blank'><FaSpotify/></a></li>
               </ul>
             </footer>
             <Route exact path='/' component={Landing}/>
             <Route exact path='/video' component={Video}/>
+            <Route exact path='/photo' component={Photo}/>
             <Route exact path='/schedule' component={Schedule}/>
             <Route exact path='/contact' component={Contact}/>
           </div>
