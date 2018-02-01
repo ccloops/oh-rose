@@ -3,8 +3,8 @@ h1 {
   font-size: 5em;
   font-style: italic;
   margin-top: 2em;
-  margin-bottom: 3em;
-
+  margin-bottom: 30px;
+  text-shadow: 5px 5px lightPink;
 }
 
 nav, footer {
@@ -61,3 +61,75 @@ footer {
     }
   }
 }
+
+main {
+  margin: 0 auto;
+}
+
+.triangle1 {  
+  display: inline-block;
+  margin:50px;
+  overflow:hidden;
+  width:200px;
+  height:200px;
+  // border:1px dashed black;
+  transform:rotate(45deg);
+  position: relative;
+  border-radius: 10px;
+  float: left;
+  
+
+    img {
+    display: block;
+    transform:rotate(-45deg);
+    transform-origin:left center;
+    width: 350px;
+    position: absolute;
+    bottom: 30;
+    }
+}
+
+.triangle2 {
+  display: inline-block;
+  margin:50px;
+  overflow:hidden;
+  width:200px;
+  height:200px;
+  // border:1px dashed black;
+  transform:rotate(45deg);
+  position: relative;
+  border-radius: 10px;
+  float: left;
+
+    img {
+      display: block;
+      transform:rotate(-45deg);
+      transform-origin:left center;
+      width: 350px;
+      position: absolute;
+      bottom: 30;
+      }
+    }
+
+
+.triangle3 {
+  display: inline-block;
+  margin:50px;
+  overflow:hidden;
+  width:200px;
+  height:200px;
+  // border:1px dashed black;
+  transform:rotate(45deg);
+  position: relative;
+  border-radius: 10px;
+  float: left;
+
+    img {
+      display: block;
+      transform:rotate(-45deg);
+      transform-origin:left center;
+      width: 350px;
+      position: absolute;
+      bottom: 30;
+      }
+    }

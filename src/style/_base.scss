@@ -11,13 +11,35 @@ html {
     position: relative;
     // background-color: $color-primary;
     // background-color: white;
-    background-image: url('../assets/rose.jpg');
+    background: repeating-linear-gradient(
+      45deg,
+      #bc608e,
+      #bc6b60 10px,
+      #d49305 10px,
+      #e43d3d 20px
+    );
+
+    background: repeating-radial-gradient(
+      circle,
+      #e43d3d,
+      #bc6b60 50px,
+      #e43d3d 50px
+    );
+
+    background: linear-gradient(70deg, rgb(236, 146, 11), pink);
+    // background-image: url('../assets/flower-eyes.jpg');
     // background-repeat: no-repeat;
+    // opacity: 0.5;
+    // filter: alpha(opacity=50);
     // background-position: center;
-    background-size: 50%;
-  }
+    // background-size: 120%;
+    text-align: center;
+  
+  
+
 
   span, em, strong, i {
     display: inline;
   }
+}
 }
