@@ -5,8 +5,13 @@ h1 {
   margin-top: 2em;
   margin-bottom: 30px;
   // text-shadow: 5px 5px lightPink;
-  color: rgb(216, 73, 123);
-  transform: rotate(180deg);
+  color: cornsilk;
+  transform: rotate(-180deg);
+
+  &:hover {
+    transition: 2s;
+    transform: rotate(180deg);
+  }
 }
 
 nav, footer {
@@ -24,7 +29,7 @@ nav, footer {
     color: black;
 
     &:hover {
-      color: maroon;
+      color: cornsilk;
       // background-color: rgb(226, 220, 196);
     }
   }
@@ -85,6 +90,7 @@ main {
   border-radius: 10px;
   float: left;
   
+  
 
     img {
     display: block;
@@ -93,6 +99,11 @@ main {
     width: 350px;
     position: absolute;
     bottom: 30;
+
+    &:hover {
+      transition: 2s;
+      transform: rotate(180deg);
+    }
     }
 }
 
@@ -115,6 +126,11 @@ main {
       width: 350px;
       position: absolute;
       bottom: 30;
+
+      &:hover {
+        transition: 2s;
+        transform: rotate(180deg);
+      }
       }
     }
 
@@ -139,6 +155,11 @@ main {
       position: absolute;
       bottom: 30;
       margin-right: 0;
+
+      &:hover {
+        transition: 2s;
+        transform: rotate(180deg);
+      }
       }
     }
 
@@ -162,6 +183,11 @@ main {
       position: absolute;
       bottom: 30;
       margin-right: 0;
+
+      &:hover {
+        transition: 2s;
+        transform: rotate(180deg);
+      }
       }
     }
 
@@ -185,6 +211,11 @@ main {
       position: absolute;
       bottom: 30;
       margin-right: 0;
+
+      &:hover {
+        transition: 2s;
+        transform: rotate(180deg);
+      }
       }
     }
 
@@ -208,5 +239,10 @@ main {
       position: absolute;
       bottom: 30;
       margin-right: 0;
+
+      &:hover {
+        transition: 2s;
+        transform: rotate(180deg);
+      }
       }
     }
