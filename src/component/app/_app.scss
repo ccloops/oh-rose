@@ -48,22 +48,27 @@ footer {
 
   text-align: center;
 
-  .icons {
+  ul.icons {
     // position: fixed;
     // bottom: 0;
+    // width: 100%;
+    // margin: 0 auto;
+    float: left;
+
 
     a {
-    // color: maroon;
     padding: 40px;
     margin: 10px;
     text-shadow: 1px 1px 1px #ccc;
     font-size: 1.5em;
+    width: 100%;
     }
   }
 }
 
 main {
   margin: 0 auto;
+  width: 100%;
 }
 
 .triangle1 {  
@@ -131,5 +136,6 @@ main {
       width: 350px;
       position: absolute;
       bottom: 30;
+      margin-right: 0;
       }
     }

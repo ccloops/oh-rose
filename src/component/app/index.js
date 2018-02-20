@@ -34,14 +34,16 @@ class App extends React.Component {
               <h1>Oh, Rose</h1>
             </header>
             <main>
-              <div className='triangle1'>
-                <img src={sunshineRoses}/>
-              </div>
-              <div className = 'triangle2'>
-                <img src={flowers}/>
-              </div>
-              <div className = 'triangle3'>
-                <img src={bedPic}/>
+              <div>
+                <div className='triangle1'>
+                  <img src={sunshineRoses}/>
+                </div>
+                <div className = 'triangle2'>
+                  <img src={flowers}/>
+                </div>
+                <div className = 'triangle3'>
+                  <img src={bedPic}/>
+                </div>
               </div>
             </main>
             <footer>
