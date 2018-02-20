@@ -13,6 +13,8 @@ import tattoos from '../../assets/tattoos.jpg';
 import flowers from '../../assets/flowers.jpg';
 import sunshineRoses from '../../assets/sunshine-roses.jpg';
 import bedPic from '../../assets/bed-pic.jpg';
+import dressingRoom from '../../assets/dressingroom.jpg';
+import animated from '../../assets/animated.jpg';
 
 
 class App extends React.Component {
@@ -43,6 +45,15 @@ class App extends React.Component {
                 </div>
                 <div className = 'triangle3'>
                   <img src={bedPic}/>
+                </div>
+                <div className = 'triangle4'>
+                  <img src={tattoos}/>
+                </div>
+                <div className = 'triangle5'>
+                  <img src={dressingRoom}/>
+                </div>
+                <div className = 'triangle6'>
+                  <img src={animated}/>
                 </div>
               </div>
             </main>
