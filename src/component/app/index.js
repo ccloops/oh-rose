@@ -91,32 +91,32 @@ class App extends React.Component {
             <main>
               <div>
                 <div 
-                  className={this.state.oneClicked ? 'expandImage1' : 'rectangle1'}
+                  className={this.state.oneClicked ? 'expandImage' : 'rectangle1'}
                   onClick={this.toggleImageOne}>
                   <img src={sunshineRoses}/>
                 </div>
                 <div  
-                  className={this.state.twoClicked ? 'expandImage2' : 'rectangle2'}
+                  className={this.state.twoClicked ? 'expandImage' : 'rectangle2'}
                   onClick={this.toggleImageTwo}>
                   <img src={flowers}/>
                 </div>
                 <div  
-                  className={this.state.threeClicked ? 'expandImage3' : 'rectangle3'}
+                  className={this.state.threeClicked ? 'expandImage' : 'rectangle3'}
                   onClick={this.toggleImageThree}>
                   <img src={bedPic}/>
                 </div>
                 <div  
-                  className={this.state.fourClicked ? 'expandImage4' : 'rectangle4'}
+                  className={this.state.fourClicked ? 'expandImage' : 'rectangle4'}
                   onClick={this.toggleImageFour}>
                   <img src={tattoos}/>
                 </div>
                 <div  
-                  className={this.state.fiveClicked ? 'expandImage5' : 'rectangle5'}
+                  className={this.state.fiveClicked ? 'expandImage' : 'rectangle5'}
                   onClick={this.toggleImageFive}>
                   <img src={dressingRoom}/>
                 </div>
                 <div  
-                  className={this.state.sixClicked ? 'expandImage6' : 'rectangle6'}
+                  className={this.state.sixClicked ? 'expandImage' : 'rectangle6'}
                   onClick={this.toggleImageSix}>
                   <img src={animated}/>
                 </div>
