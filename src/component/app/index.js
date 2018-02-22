@@ -1,6 +1,7 @@
 import './_app.scss';
 import {FaFacebookSquare, FaInstagram, FaTwitter, FaMusic, FaSpotify} from 'react-icons/lib/fa';
 import React from 'react';
+import Modal from '../modal';
 import {BrowserRouter, Route, Link} from 'react-router-dom';
 
 import Landing from '../landing';
@@ -18,7 +19,22 @@ import animated from '../../assets/animated.jpg';
 
 
 class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {clicked: false};
+
+    this.toggleClass = this.toggleClass.bind(this);
+  }
+
+  toggleClass() {
+    const currentState = this.state.clicked;
+    this.setState({clicked: !currentState});
+  }
+  
+
   render() {
+
+ 
     return (
       <div className='app'>
         <BrowserRouter>
@@ -37,22 +53,34 @@ class App extends React.Component {
             </header>
             <main>
               <div>
-                <div className='triangle1'>
+                <div 
+                  className={this.state.clicked ? 'expandImage1' : 'rectangle1'}
+                  onClick={this.toggleClass}>
                   <img src={sunshineRoses}/>
                 </div>
-                <div className = 'triangle2'>
+                <div  
+                  className={this.state.clicked ? 'expandImage2' : 'rectangle2'}
+                  onClick={this.toggleClass}>
                   <img src={flowers}/>
                 </div>
-                <div className = 'triangle3'>
+                <div  
+                  className={this.state.clicked ? 'expandImage3' : 'rectangle3'}
+                  onClick={this.toggleClass}>
                   <img src={bedPic}/>
                 </div>
-                <div className = 'triangle4'>
+                <div  
+                  className={this.state.clicked ? 'expandImage4' : 'rectangle4'}
+                  onClick={this.toggleClass}>
                   <img src={tattoos}/>
                 </div>
-                <div className = 'triangle5'>
+                <div  
+                  className={this.state.clicked ? 'expandImage5' : 'rectangle5'}
+                  onClick={this.toggleClass}>
                   <img src={dressingRoom}/>
                 </div>
-                <div className = 'triangle6'>
+                <div  
+                  className={this.state.clicked ? 'expandImage6' : 'rectangle6'}
+                  onClick={this.toggleClass}>
                   <img src={animated}/>
                 </div>
               </div>
