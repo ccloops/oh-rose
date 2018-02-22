@@ -11,13 +11,36 @@ html {
     position: relative;
     // background-color: $color-primary;
     // background-color: white;
-    background-image: url('../assets/rose.jpg');
+    background: repeating-linear-gradient(
+      45deg,
+      #bc608e,
+      #bc6b60 10px,
+      #d49305 10px,
+      #e43d3d 20px
+    );
+
+    background: repeating-radial-gradient(
+      circle,
+      #e43d3d,
+      #bc6b60 50px,
+      #e43d3d 50px
+    );
+
+    // background: linear-gradient(70deg, rgb(244, 209, 162), pink);
+    background: linear-gradient(70deg, rgb(57, 2, 2), rgb(233, 35, 35));
+    // background-image: url('../assets/brick.jpg');
     // background-repeat: no-repeat;
-    // background-position: center;
-    background-size: 50%;
-  }
+    // opacity: 0.5;
+    // filter: alpha(opacity=50);
+    background-position: center;
+    background-size: 100%;
+    text-align: center;
+  
+  
+
 
   span, em, strong, i {
     display: inline;
   }
+}
 }

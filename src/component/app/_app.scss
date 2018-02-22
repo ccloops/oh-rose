@@ -3,8 +3,15 @@ h1 {
   font-size: 5em;
   font-style: italic;
   margin-top: 2em;
-  margin-bottom: 3em;
+  margin-bottom: 30px;
+  // text-shadow: 5px 5px lightPink;
+  color: cornsilk;
+  transform: rotate(-180deg);
 
+  &:hover {
+    transition: 2s;
+    transform: rotate(180deg);
+  }
 }
 
 nav, footer {
@@ -22,7 +29,7 @@ nav, footer {
     color: black;
 
     &:hover {
-      color: maroon;
+      color: cornsilk;
       // background-color: rgb(226, 220, 196);
     }
   }
@@ -48,16 +55,196 @@ footer {
 
   text-align: center;
 
-  .icons {
+  ul.icons {
     // position: fixed;
     // bottom: 0;
+    // width: 100%;
+    // margin: 0 auto;
+    float: left;
+
 
     a {
-    // color: maroon;
     padding: 40px;
     margin: 10px;
     text-shadow: 1px 1px 1px #ccc;
     font-size: 1.5em;
+    width: 100%;
     }
   }
 }
+
+main {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.triangle1 {  
+  display: inline-block;
+  margin:50px;
+  overflow: hidden;
+  width:100px;
+  height:200px;
+  // border:1px dashed black;
+  transform:rotate(45deg);
+  position: relative;
+  border-radius: 10px;
+  float: left;
+  
+  
+
+    img {
+    display: block;
+    transform:rotate(-45deg);
+    transform-origin:left center;
+    width: 600px;
+    position: absolute;
+    bottom: 30;
+    // right: 50;
+    // top: 50;    
+
+    &:hover {
+      transition: 2s;
+      transform: rotate(360deg);
+    }
+    }
+}
+
+.triangle2 {
+  display: inline-block;
+  margin:50px;
+  overflow:hidden;
+  width:100px;
+  height:200px;
+  // border:1px dashed black;
+  transform:rotate(45deg);
+  position: relative;
+  border-radius: 10px;
+  float: left;
+
+    img {
+      display: block;
+      transform:rotate(-45deg);
+      transform-origin:left center;
+      width: 350px;
+      position: absolute;
+      bottom: 30;
+
+      &:hover {
+        transition: 2s;
+        transform: rotate(360deg);
+      }
+      }
+    }
+
+
+.triangle3 {
+  display: inline-block;
+  margin:50px;
+  overflow:hidden;
+  width:100px;
+  height:200px;
+  // border:1px dashed black;
+  transform:rotate(45deg);
+  position: relative;
+  border-radius: 10px;
+  float: left;
+
+    img {
+      display: block;
+      transform:rotate(-45deg);
+      transform-origin:left center;
+      width: 400px;
+      position: absolute;
+      bottom: 30;
+      margin-right: 0;
+
+      &:hover {
+        transition: 2s;
+        transform: rotate(360deg);
+      }
+      }
+    }
+
+.triangle4 {
+  display: inline-block;
+  margin:50px;
+  overflow:hidden;
+  width:100px;
+  height:200px;
+  // border:1px dashed black;
+  transform:rotate(45deg);
+  position: relative;
+  border-radius: 10px;
+  float: left;
+
+    img {
+      display: block;
+      transform:rotate(-45deg);
+      transform-origin:left center;
+      width: 600px;
+      position: absolute;
+      bottom: 30;
+      margin-right: 0;
+
+      &:hover {
+        transition: 2s;
+        transform: rotate(360deg);
+      }
+      }
+    }
+
+.triangle5 {
+  display: inline-block;
+  margin:50px;
+  overflow:hidden;
+  width:100px;
+  height:200px;
+  // border:1px dashed black;
+  transform:rotate(45deg);
+  position: relative;
+  border-radius: 10px;
+  float: left;
+
+    img {
+      display: block;
+      transform:rotate(-45deg);
+      transform-origin:left center;
+      width: 600px;
+      position: absolute;
+      bottom: 30;
+      margin-right: 0;
+
+      &:hover {
+        transition: 2s;
+        transform: rotate(360deg);
+      }
+      }
+    }
+
+.triangle6 {
+  display: inline-block;
+  margin:50px;
+  overflow:hidden;
+  width:100px;
+  height:200px;
+  // border:1px dashed black;
+  transform:rotate(45deg);
+  position: relative;
+  border-radius: 10px;
+  float: left;
+
+    img {
+      display: block;
+      transform:rotate(-45deg);
+      transform-origin:left center;
+      width: 400px;
+      position: absolute;
+      bottom: 30;
+      margin-right: 0;
+
+      &:hover {
+        transition: 2s;
+        transform: rotate(360deg);
+      }
+      }
+    }
