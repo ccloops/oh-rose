@@ -21,14 +21,51 @@ import animated from '../../assets/animated.jpg';
 class App extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {clicked: false};
+    this.state = {
+      oneClicked: false,
+      twoClicked: false,
+      threeClicked: false,
+      fourClicked: false,
+      fiveClicked: false,
+      
+    };
 
-    this.toggleClass = this.toggleClass.bind(this);
+    this.toggleImageOne = this.toggleImageOne.bind(this);
+    this.toggleImageTwo = this.toggleImageTwo.bind(this);
+    this.toggleImageThree = this.toggleImageThree.bind(this);
+    this.toggleImageFour = this.toggleImageFour.bind(this);
+    this.toggleImageFive = this.toggleImageFive.bind(this);
+    this.toggleImageSix = this.toggleImageSix.bind(this);
   }
 
-  toggleClass() {
-    const currentState = this.state.clicked;
-    this.setState({clicked: !currentState});
+  toggleImageOne() {
+    let currentState = this.state.oneClicked;
+    this.setState({oneClicked: !currentState});
+  }
+
+  toggleImageTwo() {
+    let currentState = this.state.twoClicked;
+    this.setState({twoClicked: !currentState});
+  }
+
+  toggleImageThree() {
+    let currentState = this.state.threeClicked;
+    this.setState({threeClicked: !currentState});
+  }
+
+  toggleImageFour() {
+    let currentState = this.state.fourClicked;
+    this.setState({fourClicked: !currentState});
+  }
+
+  toggleImageFive() {
+    let currentState = this.state.fiveClicked;
+    this.setState({fiveClicked: !currentState});
+  }
+
+  toggleImageSix() {
+    let currentState = this.state.sixClicked;
+    this.setState({sixClicked: !currentState});
   }
   
 
@@ -54,33 +91,33 @@ class App extends React.Component {
             <main>
               <div>
                 <div 
-                  className={this.state.clicked ? 'expandImage1' : 'rectangle1'}
-                  onClick={this.toggleClass}>
+                  className={this.state.oneClicked ? 'expandImage1' : 'rectangle1'}
+                  onClick={this.toggleImageOne}>
                   <img src={sunshineRoses}/>
                 </div>
                 <div  
-                  className={this.state.clicked ? 'expandImage2' : 'rectangle2'}
-                  onClick={this.toggleClass}>
+                  className={this.state.twoClicked ? 'expandImage2' : 'rectangle2'}
+                  onClick={this.toggleImageTwo}>
                   <img src={flowers}/>
                 </div>
                 <div  
-                  className={this.state.clicked ? 'expandImage3' : 'rectangle3'}
-                  onClick={this.toggleClass}>
+                  className={this.state.threeClicked ? 'expandImage3' : 'rectangle3'}
+                  onClick={this.toggleImageThree}>
                   <img src={bedPic}/>
                 </div>
                 <div  
-                  className={this.state.clicked ? 'expandImage4' : 'rectangle4'}
-                  onClick={this.toggleClass}>
+                  className={this.state.fourClicked ? 'expandImage4' : 'rectangle4'}
+                  onClick={this.toggleImageFour}>
                   <img src={tattoos}/>
                 </div>
                 <div  
-                  className={this.state.clicked ? 'expandImage5' : 'rectangle5'}
-                  onClick={this.toggleClass}>
+                  className={this.state.fiveClicked ? 'expandImage5' : 'rectangle5'}
+                  onClick={this.toggleImageFive}>
                   <img src={dressingRoom}/>
                 </div>
                 <div  
-                  className={this.state.clicked ? 'expandImage6' : 'rectangle6'}
-                  onClick={this.toggleClass}>
+                  className={this.state.sixClicked ? 'expandImage6' : 'rectangle6'}
+                  onClick={this.toggleImageSix}>
                   <img src={animated}/>
                 </div>
               </div>
