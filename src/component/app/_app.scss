@@ -81,7 +81,7 @@ main {
 .triangle1 {  
   display: inline-block;
   margin:50px;
-  overflow:hidden;
+  overflow: hidden;
   width:100px;
   height:200px;
   // border:1px dashed black;
@@ -96,13 +96,15 @@ main {
     display: block;
     transform:rotate(-45deg);
     transform-origin:left center;
-    width: 350px;
+    width: 600px;
     position: absolute;
     bottom: 30;
+    // right: 50;
+    // top: 50;    
 
     &:hover {
       transition: 2s;
-      transform: rotate(180deg);
+      transform: rotate(360deg);
     }
     }
 }
@@ -129,7 +131,7 @@ main {
 
       &:hover {
         transition: 2s;
-        transform: rotate(180deg);
+        transform: rotate(360deg);
       }
       }
     }
@@ -151,14 +153,14 @@ main {
       display: block;
       transform:rotate(-45deg);
       transform-origin:left center;
-      width: 350px;
+      width: 400px;
       position: absolute;
       bottom: 30;
       margin-right: 0;
 
       &:hover {
         transition: 2s;
-        transform: rotate(180deg);
+        transform: rotate(360deg);
       }
       }
     }
@@ -179,14 +181,14 @@ main {
       display: block;
       transform:rotate(-45deg);
       transform-origin:left center;
-      width: 350px;
+      width: 600px;
       position: absolute;
       bottom: 30;
       margin-right: 0;
 
       &:hover {
         transition: 2s;
-        transform: rotate(180deg);
+        transform: rotate(360deg);
       }
       }
     }
@@ -207,14 +209,14 @@ main {
       display: block;
       transform:rotate(-45deg);
       transform-origin:left center;
-      width: 350px;
+      width: 600px;
       position: absolute;
       bottom: 30;
       margin-right: 0;
 
       &:hover {
         transition: 2s;
-        transform: rotate(180deg);
+        transform: rotate(360deg);
       }
       }
     }
@@ -235,14 +237,14 @@ main {
       display: block;
       transform:rotate(-45deg);
       transform-origin:left center;
-      width: 350px;
+      width: 400px;
       position: absolute;
       bottom: 30;
       margin-right: 0;
 
       &:hover {
         transition: 2s;
-        transform: rotate(180deg);
+        transform: rotate(360deg);
       }
       }
     }
