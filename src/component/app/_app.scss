@@ -2,17 +2,23 @@ h1 {
   text-align: center;
   font-size: 5em;
   font-style: italic;
-  margin-top: 2em;
-  margin-bottom: 30px;
-  // text-shadow: 5px 5px lightPink;
-  color: cornsilk;
-  transform: rotate(-180deg);
+  margin: 70px 0px;
+  color: rgb(155, 59, 59);
+  transition: 2s;
+  transform: scale(-1, -1);
+  // animation: blinker 1s linear infinite;
 
   &:hover {
     transition: 2s;
-    transform: rotate(180deg);
+    // transform: rotate(180deg);
+    transform: scale(1, 1);
   }
+
 }
+
+// @keyframes blinker {
+//   50% {opacity: 0;}
+// }
 
 nav, footer {
   margin: 0 auto;
@@ -26,13 +32,18 @@ nav, footer {
   }
   
   a {
-    color: black;
+    // color: cornsilk;
+    color: rgb(155, 59, 59);
 
     &:hover {
-      color: cornsilk;
+      color: black;
       // background-color: rgb(226, 220, 196);
     }
   }
+}
+
+nav {
+  margin-top: 20px;
 }
 
 footer {
@@ -61,6 +72,7 @@ footer {
     // width: 100%;
     // margin: 0 auto;
     float: left;
+    // background-color: black;
 
 
     a {
@@ -78,19 +90,18 @@ main {
   width: 100%;
 }
 
-.triangle1 {  
+.rectangle1 {  
   display: inline-block;
   margin:50px;
   overflow: hidden;
   width:100px;
   height:200px;
-  // border:1px dashed black;
   transform:rotate(45deg);
   position: relative;
   border-radius: 10px;
   float: left;
-  
-  
+  box-shadow: 5px 5px rgba(0, 0, 0, 0.5);
+
 
     img {
     display: block;
@@ -100,7 +111,8 @@ main {
     position: absolute;
     bottom: 30;
     // right: 50;
-    // top: 50;    
+    // top: 50;   
+  
 
     &:hover {
       transition: 2s;
@@ -109,17 +121,18 @@ main {
     }
 }
 
-.triangle2 {
+.rectangle2 {
   display: inline-block;
   margin:50px;
   overflow:hidden;
   width:100px;
   height:200px;
-  // border:1px dashed black;
   transform:rotate(45deg);
   position: relative;
   border-radius: 10px;
   float: left;
+  box-shadow: 5px 5px rgba(0, 0, 0, 0.5);
+  
 
     img {
       display: block;
@@ -137,17 +150,18 @@ main {
     }
 
 
-.triangle3 {
+.rectangle3 {
   display: inline-block;
   margin:50px;
   overflow:hidden;
   width:100px;
   height:200px;
-  // border:1px dashed black;
   transform:rotate(45deg);
   position: relative;
   border-radius: 10px;
   float: left;
+  box-shadow: 5px 5px rgba(0, 0, 0, 0.5);
+  
 
     img {
       display: block;
@@ -165,17 +179,18 @@ main {
       }
     }
 
-.triangle4 {
+.rectangle4 {
   display: inline-block;
   margin:50px;
   overflow:hidden;
   width:100px;
   height:200px;
-  // border:1px dashed black;
   transform:rotate(45deg);
   position: relative;
   border-radius: 10px;
   float: left;
+  box-shadow: 5px 5px rgba(0, 0, 0, 0.5);
+  
 
     img {
       display: block;
@@ -193,17 +208,18 @@ main {
       }
     }
 
-.triangle5 {
+.rectangle5 {
   display: inline-block;
   margin:50px;
   overflow:hidden;
   width:100px;
   height:200px;
-  // border:1px dashed black;
   transform:rotate(45deg);
   position: relative;
   border-radius: 10px;
   float: left;
+  box-shadow: 5px 5px rgba(0, 0, 0, 0.5);
+  
 
     img {
       display: block;
@@ -221,7 +237,7 @@ main {
       }
     }
 
-.triangle6 {
+.rectangle6 {
   display: inline-block;
   margin:50px;
   overflow:hidden;
@@ -232,6 +248,8 @@ main {
   position: relative;
   border-radius: 10px;
   float: left;
+  box-shadow: 5px 5px rgba(0, 0, 0, 0.5);
+  
 
     img {
       display: block;
@@ -248,3 +266,12 @@ main {
       }
       }
     }
+
+.expandImage {
+  z-index: 9999;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}

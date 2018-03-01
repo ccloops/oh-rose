@@ -1,6 +1,7 @@
 import './_app.scss';
 import {FaFacebookSquare, FaInstagram, FaTwitter, FaMusic, FaSpotify} from 'react-icons/lib/fa';
 import React from 'react';
+import Modal from '../modal';
 import {BrowserRouter, Route, Link} from 'react-router-dom';
 
 import Landing from '../landing';
@@ -18,7 +19,59 @@ import animated from '../../assets/animated.jpg';
 
 
 class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      oneClicked: false,
+      twoClicked: false,
+      threeClicked: false,
+      fourClicked: false,
+      fiveClicked: false,
+      
+    };
+
+    this.toggleImageOne = this.toggleImageOne.bind(this);
+    this.toggleImageTwo = this.toggleImageTwo.bind(this);
+    this.toggleImageThree = this.toggleImageThree.bind(this);
+    this.toggleImageFour = this.toggleImageFour.bind(this);
+    this.toggleImageFive = this.toggleImageFive.bind(this);
+    this.toggleImageSix = this.toggleImageSix.bind(this);
+  }
+
+  toggleImageOne() {
+    let currentState = this.state.oneClicked;
+    this.setState({oneClicked: !currentState});
+  }
+
+  toggleImageTwo() {
+    let currentState = this.state.twoClicked;
+    this.setState({twoClicked: !currentState});
+  }
+
+  toggleImageThree() {
+    let currentState = this.state.threeClicked;
+    this.setState({threeClicked: !currentState});
+  }
+
+  toggleImageFour() {
+    let currentState = this.state.fourClicked;
+    this.setState({fourClicked: !currentState});
+  }
+
+  toggleImageFive() {
+    let currentState = this.state.fiveClicked;
+    this.setState({fiveClicked: !currentState});
+  }
+
+  toggleImageSix() {
+    let currentState = this.state.sixClicked;
+    this.setState({sixClicked: !currentState});
+  }
+  
+
   render() {
+
+ 
     return (
       <div className='app'>
         <BrowserRouter>
@@ -37,22 +90,34 @@ class App extends React.Component {
             </header>
             <main>
               <div>
-                <div className='triangle1'>
+                <div 
+                  className={this.state.oneClicked ? 'expandImage' : 'rectangle1'}
+                  onClick={this.toggleImageOne}>
                   <img src={sunshineRoses}/>
                 </div>
-                <div className = 'triangle2'>
+                <div  
+                  className={this.state.twoClicked ? 'expandImage' : 'rectangle2'}
+                  onClick={this.toggleImageTwo}>
                   <img src={flowers}/>
                 </div>
-                <div className = 'triangle3'>
+                <div  
+                  className={this.state.threeClicked ? 'expandImage' : 'rectangle3'}
+                  onClick={this.toggleImageThree}>
                   <img src={bedPic}/>
                 </div>
-                <div className = 'triangle4'>
+                <div  
+                  className={this.state.fourClicked ? 'expandImage' : 'rectangle4'}
+                  onClick={this.toggleImageFour}>
                   <img src={tattoos}/>
                 </div>
-                <div className = 'triangle5'>
+                <div  
+                  className={this.state.fiveClicked ? 'expandImage' : 'rectangle5'}
+                  onClick={this.toggleImageFive}>
                   <img src={dressingRoom}/>
                 </div>
-                <div className = 'triangle6'>
+                <div  
+                  className={this.state.sixClicked ? 'expandImage' : 'rectangle6'}
+                  onClick={this.toggleImageSix}>
                   <img src={animated}/>
                 </div>
               </div>

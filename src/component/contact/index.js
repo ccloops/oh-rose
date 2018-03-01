@@ -4,7 +4,7 @@ class Contact extends React.Component {
   render() {
     return(
       <div className='contact'>
-        <form type='submit'>
+        <form type='submit' action=''>
 
           <input 
             type='text'
