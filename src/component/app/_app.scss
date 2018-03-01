@@ -26,13 +26,17 @@ nav, footer {
   }
   
   a {
-    color: black;
+    color: cornsilk;
 
     &:hover {
-      color: cornsilk;
+      color: black;
       // background-color: rgb(226, 220, 196);
     }
   }
+}
+
+nav {
+  margin-top: 20px;
 }
 
 footer {
@@ -89,6 +93,7 @@ main {
   position: relative;
   border-radius: 10px;
   float: left;
+  box-shadow: 5px 5px rgba(0, 0, 0, 0.5);
 
 
     img {
@@ -99,7 +104,8 @@ main {
     position: absolute;
     bottom: 30;
     // right: 50;
-    // top: 50;    
+    // top: 50;   
+  
 
     &:hover {
       transition: 2s;
@@ -119,6 +125,8 @@ main {
   position: relative;
   border-radius: 10px;
   float: left;
+  box-shadow: 5px 5px rgba(0, 0, 0, 0.5);
+  
 
     img {
       display: block;
@@ -147,6 +155,8 @@ main {
   position: relative;
   border-radius: 10px;
   float: left;
+  box-shadow: 5px 5px rgba(0, 0, 0, 0.5);
+  
 
     img {
       display: block;
@@ -175,6 +185,8 @@ main {
   position: relative;
   border-radius: 10px;
   float: left;
+  box-shadow: 5px 5px rgba(0, 0, 0, 0.5);
+  
 
     img {
       display: block;
@@ -203,6 +215,8 @@ main {
   position: relative;
   border-radius: 10px;
   float: left;
+  box-shadow: 5px 5px rgba(0, 0, 0, 0.5);
+  
 
     img {
       display: block;
@@ -231,6 +245,8 @@ main {
   position: relative;
   border-radius: 10px;
   float: left;
+  box-shadow: 5px 5px rgba(0, 0, 0, 0.5);
+  
 
     img {
       display: block;
