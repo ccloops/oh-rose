@@ -4,14 +4,15 @@ h1 {
   font-style: italic;
   margin-top: 2em;
   margin-bottom: 30px;
-  // text-shadow: 5px 5px lightPink;
   color: cornsilk;
-  transform: rotate(-180deg);
+  transform: scale(-1, -1);
 
   &:hover {
     transition: 2s;
-    transform: rotate(180deg);
+    // transform: rotate(180deg);
+    transform: scale(1, 1);
   }
+
 }
 
 nav, footer {
