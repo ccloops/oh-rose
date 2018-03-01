@@ -3,7 +3,7 @@ h1 {
   font-size: 5em;
   font-style: italic;
   margin: 70px 0px;
-  color: cornsilk;
+  color: rgb(155, 59, 59);
   transition: 2s;
   transform: scale(-1, -1);
 
@@ -27,7 +27,8 @@ nav, footer {
   }
   
   a {
-    color: cornsilk;
+    // color: cornsilk;
+    color: rgb(155, 59, 59);
 
     &:hover {
       color: black;
@@ -66,6 +67,7 @@ footer {
     // width: 100%;
     // margin: 0 auto;
     float: left;
+    // background-color: black;
 
 
     a {
