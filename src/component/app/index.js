@@ -83,7 +83,7 @@ class App extends React.Component {
                   <li><Link to='/video'>Videos</Link></li>
                   <li><Link to='/photo'>Photos</Link></li>
                   <li><Link to='/schedule'>Schedule</Link></li>
-                  <li><Link to='/contact'>Contact</Link></li>
+                  <li><Link to='/contact#email'>Contact</Link></li>
                 </ul>
               </nav>
               <h1>Oh, Rose</h1>
