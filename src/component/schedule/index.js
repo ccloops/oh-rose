@@ -1,5 +1,6 @@
 import './_schedule.scss';
 import React from 'react';
+import spring from '../../assets/springtour2018.jpg';
 // import tattoos from '../../assets/tattoos.jpg';
 
 class Schedule extends React.Component {
@@ -7,6 +8,7 @@ class Schedule extends React.Component {
     return (
       <div className='schedule'>
         <h2>Upcoming Shows</h2>
+        <img src={spring} />
       </div>
     );
   }
