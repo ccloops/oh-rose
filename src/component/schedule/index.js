@@ -1,7 +1,6 @@
 import './_schedule.scss';
 import React from 'react';
 import spring from '../../assets/springtour2018.jpg';
-// import tattoos from '../../assets/tattoos.jpg';
 
 class Schedule extends React.Component {
   render() {

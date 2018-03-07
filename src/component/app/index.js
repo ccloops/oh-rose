@@ -10,7 +10,6 @@ import Video from '../video';
 import Schedule from '../schedule';
 import Contact from '../contact';
 import tattoos from '../../assets/tattoos.jpg';
-// import flowerBackground from '../../assets/flower-background.JPG';
 import flowers from '../../assets/flowers.jpg';
 import sunshineRoses from '../../assets/sunshine-roses.jpg';
 import bedPic from '../../assets/bed-pic.jpg';
