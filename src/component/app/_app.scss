@@ -3,7 +3,8 @@ h1 {
   font-size: 5em;
   font-style: italic;
   margin: 70px 0px;
-  color: rgb(155, 59, 59);
+  // color: rgb(155, 59, 59);
+  color: black;
   transition: 2s;
   transform: scale(-1, -1);
   // animation: blinker 1s linear infinite;
@@ -33,7 +34,8 @@ nav, footer {
   
   a {
     // color: cornsilk;
-    color: rgb(155, 59, 59);
+    // color: rgb(155, 59, 59);
+    color: black;
 
     &:hover {
       color: black;
