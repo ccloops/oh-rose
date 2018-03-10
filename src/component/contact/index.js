@@ -3,33 +3,41 @@ import React from 'react';
 class Contact extends React.Component {
   render() {
     return(
-      <div className='contact'>
-        <form type='submit' action=''>
+      
+      <React.Fragment>
+        <div className='contact'>
 
-          <input 
-            type='text'
-            id='fname'
-            name='firstname'
-            placeholder='Your first name...'
-          />
+          <div id="email">
+            <p>contact email: ohrosemusic@gmail.com</p>
+          </div>
 
-          <input
-            type='text'
-            id='lname'
-            name='lastname'
-            placeholder='Your last name...'
-          />
+          <form type='submit' action=''>
 
-          <textarea 
-            id='subject' 
-            name='subject'
-            placeholder='Write something...'>
-          </textarea>
+            <input 
+              type='text'
+              id='fname'
+              name='firstname'
+              placeholder='Your first name...'
+            />
 
-          <button type='submit'>Submit</button>          
+            <input
+              type='text'
+              id='lname'
+              name='lastname'
+              placeholder='Your last name...'
+            />
+
+            <textarea 
+              id='subject' 
+              name='subject'
+              placeholder='Write something...'>
+            </textarea>
+
+            <button type='submit'>Submit</button>          
         
-        </form>
-      </div>
+          </form>
+        </div>
+      </React.Fragment>
     );
   }
 }

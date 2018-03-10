@@ -3,7 +3,7 @@ h1 {
   font-size: 5em;
   font-style: italic;
   margin: 70px 0px;
-  color: rgb(155, 59, 59);
+  color: black;
   transition: 2s;
   transform: scale(-1, -1);
   // animation: blinker 1s linear infinite;
@@ -32,12 +32,10 @@ nav, footer {
   }
   
   a {
-    // color: cornsilk;
-    color: rgb(155, 59, 59);
+    color: black;
 
     &:hover {
-      color: black;
-      // background-color: rgb(226, 220, 196);
+      color: darkSlateGray;
     }
   }
 }
@@ -67,12 +65,7 @@ footer {
   text-align: center;
 
   ul.icons {
-    // position: fixed;
-    // bottom: 0;
-    // width: 100%;
-    // margin: 0 auto;
     float: left;
-    // background-color: black;
 
 
     a {
@@ -110,8 +103,6 @@ main {
     width: 600px;
     position: absolute;
     bottom: 30;
-    // right: 50;
-    // top: 50;   
   
 
     &:hover {
