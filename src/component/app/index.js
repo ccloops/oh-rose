@@ -2,7 +2,7 @@ import './_app.scss';
 import {FaFacebookSquare, FaInstagram, FaTwitter, FaMusic, FaSpotify} from 'react-icons/lib/fa';
 import React from 'react';
 import Modal from '../modal';
-import {BrowserRouter, Route, Link} from 'react-router-dom';
+import {BrowserRouter, Route, Link, browserHistory} from 'react-router-dom';
 
 import Landing from '../landing';
 import Photo from '../photo';
@@ -35,6 +35,11 @@ class App extends React.Component {
     this.toggleImageFour = this.toggleImageFour.bind(this);
     this.toggleImageFive = this.toggleImageFive.bind(this);
     this.toggleImageSix = this.toggleImageSix.bind(this);
+    this.pageLocation = this.pageLocation.bind(this);
+  }
+
+  pageLocation() {
+    browserHistory.push('/contact#email');
   }
 
   toggleImageOne() {
@@ -82,7 +87,7 @@ class App extends React.Component {
                   <li><Link to='/video'>Videos</Link></li>
                   <li><Link to='/photo'>Photos</Link></li>
                   <li><Link to='/schedule'>Schedule</Link></li>
-                  <li><Link to='/contact'>Contact</Link></li>
+                  <li><Link to='/contact#email'>Contact</Link></li>
                 </ul>
               </nav>
               <h1>Oh, Rose</h1>
