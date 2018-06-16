@@ -37,3 +37,30 @@ ohrosemusic@gmail.com
 
 ## Booking agent
 ohrosemusic@gmail.com
+
+## Tech & Framework Used
+
+* babel-core
+* babel-loader
+* babel-plugin-transform-object-rest-spread
+* babel-preset-env
+* babel-preset-react
+* css-loader
+* eslint-plugin-react
+* express
+* extract-text-webpack-plugin
+* file-loader
+* howler
+* html-webpack-plugin
+* node-sass
+* react
+* react-dom
+* react-icons
+* react-router-dom
+* resolve-url-loader
+* sass-loader
+* style-loader
+* superagent
+* url-loader
+* webpack
+* webpack-dev-server
