@@ -1,7 +1,5 @@
 # Oh, Rose
 
-### Version 1.0.0
-
 Oh, Rose!
 
 ### Deployed Site:
